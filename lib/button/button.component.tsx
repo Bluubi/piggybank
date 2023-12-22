@@ -1,6 +1,6 @@
 import { ComponentProps } from 'react'
 import { BaseProps } from '../utils'
-import '../styles.module.css'
+import '../styles.css'
 
 type ButtonProps = ComponentProps<'button'> & BaseProps
 

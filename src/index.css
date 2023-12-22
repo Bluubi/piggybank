@@ -1,6 +1,5 @@
 @import url(@lib/styles.css);
 
-
 :root {
 	--font-family: 'Open sans', sans-serif;
 }
@@ -12,17 +11,17 @@
 	margin: 0;
 }
 
-html, body {
+html,
+body {
 	overflow: hidden;
 }
-
 
 body > .blocker {
 	background: rgba(0, 0, 0, 0.75);
 	position: fixed;
 	inset: 0;
 	overflow: hidden;
-	DISPLAY: flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: white;

@@ -7,10 +7,16 @@ export default function CenterSection() {
 		<section className={styles.section}>
 			<div className={styles.content}>
 				{' '}
-				<p>Bienvenido a piggybank, tu propia hucha de ahorros. Apunta tus gastos,
-					ponte límites y olvídate de los molestos cálculos</p>
-				<LinkNavigator path={'/'} theme={'primary'} role={'link'} type={'link'}>
-					<p className={styles.navigator} >Start saving your money </p>
+				<p>
+					Bienvenido a piggybank, tu propia hucha de ahorros. Apunta tus gastos,
+					ponte límites y olvídate de los molestos cálculos
+				</p>
+				<LinkNavigator
+					path={'/'}
+					theme={'primary'}
+					role={'link'}
+					type={'link'}>
+					<p className={styles.navigator}>Start saving your money </p>
 				</LinkNavigator>
 			</div>
 			<img
