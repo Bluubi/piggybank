@@ -13,8 +13,10 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
+		"path": "^0.12.7",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.21.1"
 	},
 	"devDependencies": {
 		"@testing-library/dom": "9.3.3",
