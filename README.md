@@ -1,4 +1,4 @@
-# Save your money
+# Piggybank
 
 ## Proposal
 
