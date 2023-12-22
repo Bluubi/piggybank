@@ -1,0 +1,32 @@
+.header {
+	padding: 1rem;
+	background: #3c3c3c;
+	color: #f4f4f4;
+	position: sticky;
+	top: 0;
+}
+
+.header::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 55px;
+	top: 50px;
+	background: #3c3c3c;
+	transform: skew(79deg, -5deg);
+	border-radius: 10%;
+}
+
+.img {
+	height: 150px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.subtitle {
+	position: relative;
+	z-index: 10;
+}
