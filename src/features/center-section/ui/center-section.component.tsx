@@ -8,7 +8,7 @@ export default function CenterSection() {
 			<div className={styles.content}>
 				{' '}
 				<p>
-					Bienvenido a piggybank, tu propia hucha de ahorros. Apunta tus gastos,
+					Bienvenido a <b>piggybank, tu propia hucha de ahorros</b>. Apunta tus gastos,
 					ponte límites y olvídate de los molestos cálculos
 				</p>
 				<LinkNavigator
