@@ -5,10 +5,17 @@
 
 .section {
 	display: flex;
+	flex-direction: row;
 	justify-content: flex-end;
 	height: 100lvh;
 	align-items: center;
 	position: relative;
+}
+
+.content > p {
+	margin-bottom: 2rem;
+	font-size: 1.4rem;
+	letter-spacing: 0.03rem;
 }
 
 .content {
@@ -16,9 +23,21 @@
 	flex-wrap: wrap;
 
 	padding: 3rem;
-	width: 400px;
-
-	font-size: 2rem;
 
 	margin-left: 2rem;
+}
+
+@media screen and (max-width: 680px){
+	.section {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.content {
+		margin: unset;
+	}
+
+	.image {
+		margin-left: unset;
+	}
 }
