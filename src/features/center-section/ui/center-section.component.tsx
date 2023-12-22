@@ -1,5 +1,6 @@
 import saveMoneyImg from '@assets/finance-woman-cash.png'
 import styles from './center-section.module.css'
+import LinkNavigator from "../../../../lib/link-navigator/link-navigator.component.tsx";
 
 export default function CenterSection() {
 	return (
@@ -8,7 +9,9 @@ export default function CenterSection() {
 				{' '}
 				Bienvenido a piggybank, tu propia hucha de ahorros. Apunta tus gastos,
 				ponte límites y olvídate de los molestos cálculos
-				<a>Link to </a>
+				<LinkNavigator path={'/'}>
+					<p>Start saving your money </p>
+				</LinkNavigator>
 			</div>
 			<img
 				src={saveMoneyImg}
