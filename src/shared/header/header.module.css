@@ -2,8 +2,6 @@
 	padding: 1rem;
 	background: #3c3c3c;
 	color: #f4f4f4;
-	position: sticky;
-	top: 0;
 }
 
 .header::after {
@@ -29,4 +27,5 @@
 .subtitle {
 	position: relative;
 	z-index: 10;
+	margin-top: 1rem;
 }

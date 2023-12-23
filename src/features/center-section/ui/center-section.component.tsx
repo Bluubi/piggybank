@@ -1,25 +1,22 @@
 import saveMoneyImg from '@assets/finance-woman-cash.png'
 import styles from './center-section.module.css'
 import LinkNavigator from '../../../../lib/link-navigator/link-navigator.component.tsx'
-import {useTranslation} from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 export default function CenterSection() {
-
-	const { t} = useTranslation()
+	const { t } = useTranslation()
 
 	return (
 		<section className={styles.section}>
 			<div className={styles.content}>
 				{' '}
-				<p>
-					{ t('welcome')}
-				</p>
+				<p>{t('welcome')}</p>
 				<LinkNavigator
-					path={'/'}
+					path={'saving/new'}
 					theme={'primary'}
 					role={'link'}
 					type={'link'}>
-					<p className={styles.navigator}> { t('start.saving')} </p>
+					<p className={styles.navigator}> {t('start.saving')} </p>
 				</LinkNavigator>
 			</div>
 			<img

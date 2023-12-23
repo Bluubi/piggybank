@@ -6,7 +6,7 @@ export default function Header() {
 			<h1> Piggybank </h1>
 			<h4 className={styles.subtitle}>
 				{' '}
-				Note your expenses, erase your worries
+				Note down your expenses, erase your worries
 			</h4>
 			<img
 				src={piggybank}
