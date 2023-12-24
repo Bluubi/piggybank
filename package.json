@@ -1,5 +1,5 @@
 {
-	"name": "save-your-money",
+	"name": "piggybank",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -16,7 +16,9 @@
 		"i18next": "^23.7.11",
 		"path": "^0.12.7",
 		"react": "^18.2.0",
+		"react-calendar": "^4.7.0",
 		"react-dom": "^18.2.0",
+		"react-hook-form": "^7.49.2",
 		"react-i18next": "^14.0.0",
 		"react-router-dom": "^6.21.1"
 	},

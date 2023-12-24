@@ -1,14 +1,25 @@
 import styles from './new-saving.module.css'
+import Calendar from 'react-calendar'
+import { useRef } from 'react'
+import CalendarSelector from "../../../center-section/calendar-input/ui/calendar-input.component.tsx";
+
+type Inputs = {
+	limit: number
+	month: string
+}
 
 export default function NewSaving() {
+
 	return (
 		<div
 			role={'contentinfo'}
 			className={styles.content}>
-			<h1> Keep going in that way!</h1>
+			<h2> Start your savings </h2>
+			<CalendarSelector />
 			<form>
-				<label></label>
+				<label> Write your limit </label>
 			</form>
 		</div>
 	)
 }
+

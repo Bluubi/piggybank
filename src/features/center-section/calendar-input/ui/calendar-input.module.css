@@ -1,0 +1,60 @@
+.inputContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar > div:first-child {
+    background: unset;
+    display: flex;
+}
+
+.calendar > div {
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+.calendar > div {
+    text-align: center;
+}
+
+.calendar button {
+    padding: 0.5rem;
+    border: 0;
+}
+
+.calendar button:hover {
+    background: var(--dark-color);
+    color: var(--light-color);
+
+    cursor: pointer;
+}
+
+.dateInput {
+    flex: 1 0 50%;
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    border-width: 0 0 1px 0;
+    border-radius: 2px 2px 0 0;
+}
+
+.dateSelector {
+    padding: 0.5rem;
+    border:1px solid var(--dark-color);
+    border-radius: 2px;
+}
+
+.dateSelector:hover {
+    background: var(--dark-color);
+    color: var(--light-color);
+
+    cursor: pointer;
+}

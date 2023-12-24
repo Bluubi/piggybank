@@ -1,7 +1,11 @@
 .content {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 2rem;
 
 	color: var(--dark-color);
+
+	padding: 1rem;
 }
+
