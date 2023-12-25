@@ -1,0 +1,68 @@
+.inputContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.dateInput {
+    flex: 1 0 50%;
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    border-width: 0 0 1px 0;
+    border-radius: 2px 2px 0 0;
+}
+
+.dateSelector {
+    padding: 0.5rem;
+    border: 1px solid var(--dark-color);
+    border-radius: 2px;
+
+    position: relative;
+}
+
+.dateSelector:hover {
+    background: var(--dark-color);
+    color: var(--light-color);
+
+    cursor: pointer;
+}
+
+.childSelector {
+    position: absolute;
+    right: 2svw;
+    top: 30lvh;
+    background: white;
+    padding: 1rem;
+    border: 1px solid var(--dark-color);
+    border-radius: 2px;
+
+    display: none;
+}
+
+.childSelector > ul {
+    list-style: none;
+}
+
+.childSelector > ul > li {
+    padding:0.5rem;
+    position:relative;
+    margin-left: 0.5rem;
+}
+
+.childSelector > ul > li:hover {
+    cursor: pointer;
+}
+
+.childSelector > ul > li:hover:after {
+    position: absolute;
+    content: '';
+    left: -10px;
+
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid var(--dark-color);
+    border-bottom: 10px solid transparent;
+}
