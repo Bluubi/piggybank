@@ -1,11 +1,12 @@
 export function deviceController() {
-	document.addEventListener('onload', (event) => setBackgroundBlock(event))
+	window.addEventListener('load', (event) => setBackgroundBlock(event))
 	window.addEventListener('resize', (event) => setBackgroundBlock(event))
 }
 
 function setBackgroundBlock(event: Event) {
 	const elementBlock = document.body.querySelector('[data-testid="block"]')
 
+	console.log('hola rafa');
 	if (event === undefined) {
 		return
 	}

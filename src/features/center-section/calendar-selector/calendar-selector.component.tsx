@@ -1,18 +1,18 @@
 import styles from './calendar-selector.module.css'
-import React, {forwardRef, useRef} from 'react'
+import {FC, forwardRef, useImperativeHandle, useRef} from 'react'
 import {dateFormatOptions, openDateFormatOption, selectDateFormatOption} from "./calendar-selector.component.ts";
 
 
 const CalendarSelectorComponent = forwardRef(({}, ref) => {
-	const inputHTML = useRef<HTMLInputElement | null>(null)
+	const inputHTML = useRef<HTMLInputElement>()
 
-	React.useImperativeHandle(ref, () => {
+	useImperativeHandle(ref, () => {
 		return {
 			fill(completeDate: string) {
 				inputHTML.current!.value = completeDate;
 			},
 		}
-	});
+	}, []);
 
 	function handleClickChangeDateFormat(event: Event){
 		const format = selectDateFormatOption(event);
