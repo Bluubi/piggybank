@@ -6,7 +6,7 @@ export function deviceController() {
 function setBackgroundBlock(event: Event) {
 	const elementBlock = document.body.querySelector('[data-testid="block"]')
 
-	console.log('hola rafa');
+	console.log('hola rafa')
 	if (event === undefined) {
 		return
 	}

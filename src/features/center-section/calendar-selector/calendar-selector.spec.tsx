@@ -1,5 +1,5 @@
-import {describe, test, expect, afterEach} from 'vitest'
-import {cleanup, render} from '@testing-library/react'
+import { describe, test, expect, afterEach } from 'vitest'
+import { cleanup, render } from '@testing-library/react'
 import CalendarSelector from './calendar-selector.component.tsx'
 import { Simulate } from 'react-dom/test-utils'
 import click = Simulate.click
@@ -33,7 +33,7 @@ describe('Calendar selector', () => {
 		click(liElements[0])
 
 		expect(input.value).toEqual(new Date().toLocaleDateString('es-ES'))
-	});
+	})
 
 	test('should trigger event on click and change date format zh-Hans-CN => es-ES', () => {
 		const { getByTestId } = render(<CalendarSelector />)
