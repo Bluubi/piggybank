@@ -9,10 +9,9 @@ function App() {
 	}, [])
 
 	return (
-		<div>
 			<CenterSection />
-		</div>
 	)
 }
 
 export default App
+                                                 
