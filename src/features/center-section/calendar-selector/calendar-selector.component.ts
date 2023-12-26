@@ -2,7 +2,6 @@ export function openDateFormatOption() {
 	const childSelector = document.querySelector(
 		'[data-testid="date-selector"]'
 	) as HTMLDivElement
-	console.log(childSelector)
 	const display = childSelector.style.display
 
 	if (display === 'block') {
@@ -14,7 +13,6 @@ export function openDateFormatOption() {
 export function selectDateFormatOption(event: Event) {
 	const liElement = event.target as HTMLLIElement
 	const value = liElement.getAttribute('data-value')
-	console.log(dateFormatOptions.get(value!)!())
 	return dateFormatOptions.get(value!)
 }
 

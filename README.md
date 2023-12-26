@@ -178,3 +178,8 @@ describe('Link Navigator',() => {
     })
 })
 ```
+ ## ¿useRef()?
+
+``useRef`` puede utilizarse **desde dentro** del componente o **desde dentro _hacia_ fuera del componente**, permitiendo al padre
+acceder a funciones del hijo.
+
