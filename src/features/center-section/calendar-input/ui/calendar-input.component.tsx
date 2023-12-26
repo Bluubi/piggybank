@@ -4,18 +4,17 @@ import CalendarSelectorComponent from '../../calendar-selector/calendar-selector
 import { useEffect, useRef, useState } from 'react'
 
 export default function CalendarInput() {
-	const inputHTML = useRef<{fill: (value: string) => void}>(null);
+	const inputHTML = useRef<{ fill: (value: string) => void }>(null)
 
-	const [ date, setDate ] = useState<Date>(new Date());
+	const [date, setDate] = useState<Date>(new Date())
 
 	useEffect(() => {
-			const month = date.getMonth()
-			const year = date.getFullYear()
-			const number = date.getDate()
-			if(inputHTML.current){
-				inputHTML.current.fill(`${year}/${month}/${number}`)
-			}
-		
+		const month = date.getMonth()
+		const year = date.getFullYear()
+		const number = date.getDate()
+		if (inputHTML.current) {
+			inputHTML.current.fill(`${year}/${month}/${number}`)
+		}
 	}, [inputHTML, date])
 
 	return (

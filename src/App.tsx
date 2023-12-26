@@ -8,10 +8,7 @@ function App() {
 		deviceController()
 	}, [])
 
-	return (
-			<CenterSection />
-	)
+	return <CenterSection />
 }
 
 export default App
-                                                 
