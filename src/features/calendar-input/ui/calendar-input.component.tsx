@@ -1,7 +1,7 @@
 import Calendar from 'react-calendar'
 import styles from './calendar-input.module.css'
 import CalendarSelectorComponent from '../../calendar-selector/calendar-selector.component.tsx'
-import {useEffect, useRef, useState} from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function CalendarInput() {
 	const inputHTML = useRef<{ fill: (value: string) => void }>(null)
