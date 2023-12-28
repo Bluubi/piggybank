@@ -1,20 +1,31 @@
 import styles from './new-saving.module.css'
-import CalendarSelector from '../../../center-section/calendar-input/ui/calendar-input.component.tsx'
+import CalendarSelector from '../../../calendar-input/ui/calendar-input.component.tsx'
+import {useFormNewSaving} from "../../../calendar-selector/calendar-selector.component.ts";
 
-type Inputs = {
-	limit: number
-	month: string
+export type NewSavingForm = {
+	limit: number,
+	date: string
 }
 
 export default function NewSaving() {
+
+	function registerNewSaving(){
+
+	}
+
+	const { register, handleSubmit } = useFormNewSaving();
+
 	return (
 		<div
 			role={'contentinfo'}
 			className={styles.content}>
 			<h2> Start your savings </h2>
-			<CalendarSelector />
-			<form>
+			<form onSubmit={handleSubmit(registerNewSaving)}>
+				<CalendarSelector  />
 				<label> Write your limit </label>
+				<input type={"number"} {...register('limit', {
+					required: true
+				})}/>
 			</form>
 		</div>
 	)

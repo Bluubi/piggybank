@@ -1,13 +1,15 @@
 import styles from './calendar-selector.module.css'
-import { FC, forwardRef, useImperativeHandle, useRef } from 'react'
+import {forwardRef, useImperativeHandle, useRef} from 'react'
 import {
 	dateFormatOptions,
 	openDateFormatOption,
 	selectDateFormatOption,
+	useFormNewSaving,
 } from './calendar-selector.component.ts'
 
 const CalendarSelectorComponent = forwardRef(({}, ref) => {
-	const inputHTML = useRef<HTMLInputElement>()
+	const { register } = useFormNewSaving();
+	const inputHTML = useRef<HTMLInputElement>();
 
 	useImperativeHandle(
 		ref,
@@ -53,6 +55,7 @@ const CalendarSelectorComponent = forwardRef(({}, ref) => {
 				readOnly={true}
 				disabled={true}
 				className={styles.dateInput}
+				{...register('date')}
 				ref={inputHTML}
 			/>
 			<div

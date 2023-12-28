@@ -1,14 +1,12 @@
 import './App.css'
-import CenterSection from './features/center-section/ui/center-section.component.tsx'
-import { deviceController } from './core/infrastructure/device.controller.ts'
-import { useEffect } from 'react'
+import MainSection from "./features/main-section/ui/main-section.component.tsx";
+import NewSavingSection from "./features/new-saving-section/new-saving-section.component.tsx";
 
 function App() {
-	useEffect(() => {
-		deviceController()
-	}, [])
 
-	return <CenterSection />
+	return (<MainSection>
+		<NewSavingSection />
+	</MainSection>)
 }
 
 export default App

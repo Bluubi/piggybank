@@ -1,3 +1,6 @@
+import {useForm} from "react-hook-form";
+import {NewSavingForm} from "../savings/new/ui/new-saving.component.tsx";
+
 export function openDateFormatOption() {
 	const childSelector = document.querySelector(
 		'[data-testid="date-selector"]'
@@ -35,4 +38,9 @@ export const dateFormatOptions = new Map<string, () => string>([
 				year: 'numeric',
 			}),
 	],
-])
+]);
+
+export function useFormNewSaving(){
+	const { register, handleSubmit } = useForm<NewSavingForm>({})
+	return { register, handleSubmit}
+}
