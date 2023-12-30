@@ -1,12 +1,15 @@
 import Calendar from 'react-calendar'
 import styles from './calendar-input.module.css'
 import CalendarSelectorComponent from '../../calendar-selector/calendar-selector.component.tsx'
-import { useEffect, useRef, useState } from 'react'
+import {useEffect, useRef, useState} from 'react'
+import {useFormContext} from "react-hook-form";
 
 export default function CalendarInput() {
 	const inputHTML = useRef<{ fill: (value: string) => void }>(null)
 
 	const [date, setDate] = useState<Date>(new Date())
+	const { register } = useFormContext();
+
 
 	useEffect(() => {
 		const month = date.getMonth()

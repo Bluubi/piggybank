@@ -2,8 +2,7 @@
 
 ## Proposal
 
-Learn and get better with React. Also practice english
-writing better docs.
+Learn and get better with React. It's only for learning purposes
 
 ## Dependencies
 
